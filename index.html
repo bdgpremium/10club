@@ -1,248 +1,164 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BDG WIN </title>
 
 <!-- Meta Pixel Code -->
 <script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+!function(f,b,e,v,n,t,s){
+if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
+if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];
+t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
+s.parentNode.insertBefore(t,s)
+}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1461739068719414');
-fbq('track', 'PageView');
+
+fbq('init','1461739068719414');
+fbq('track','PageView');
 </script>
+
 <noscript>
 <img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1461739068719414&ev=PageView&noscript=1"/>
 </noscript>
 <!-- End Meta Pixel Code -->
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BDG WIN - Play & Win</title>
-
 <style>
-
 body{
 margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
 font-family:Arial, sans-serif;
-background:#0b0b0b;
-color:white;
+background:linear-gradient(135deg,#0f172a,#1e293b);
+color:#fff;
+}
+
+.card{
+width:340px;
+padding:30px;
+border-radius:20px;
+background:#1f2937;
 text-align:center;
+box-shadow:0 20px 40px rgba(0,0,0,.6);
 }
 
-.container{
-padding:20px;
+.title{
+font-size:22px;
+font-weight:bold;
+color:#ff4b5c;
+margin-bottom:20px;
 }
 
-h1{
-color:#00ff88;
-font-size:32px;
+.logo{
+width:90px;
+height:90px;
+border-radius:50%;
+margin-bottom:15px;
 }
 
-.sub{
+.subtitle{
+font-size:14px;
+color:#ff6b6b;
+margin-bottom:10px;
+}
+
+.timer{
+font-size:36px;
+font-weight:bold;
+color:#ff4b5c;
+margin:10px 0;
+}
+
+.live{
+font-size:14px;
 color:#ccc;
 margin-bottom:20px;
 }
 
-.btn{
-display:inline-block;
-padding:15px 25px;
-margin:10px;
-background:#00ff88;
-color:black;
+.live span{
+color:#fbbf24;
 font-weight:bold;
-border-radius:8px;
+}
+
+.btn{
+display:block;
+padding:15px;
+margin:10px 0;
+border-radius:12px;
+font-weight:bold;
 text-decoration:none;
 }
 
-.telegram{
-background:#229ED9;
-color:white;
+.join{
+background:#ff4b5c;
+color:#fff;
 }
 
-.features{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:15px;
-margin-top:30px;
-}
-
-.feature{
-background:#1a1a1a;
-padding:15px;
-border-radius:10px;
-}
-
-.timer{
-font-size:28px;
-color:#ffd700;
-margin:20px 0;
-}
-
-.section{
-margin-top:40px;
-}
-
-.testimonial{
-background:#1a1a1a;
-padding:15px;
-border-radius:10px;
-margin:10px;
+.vip{
+background:#fbbf24;
+color:#000;
 }
 
 .footer{
-margin-top:40px;
+margin-top:15px;
 font-size:12px;
 color:#aaa;
 }
-
-.sticky{
-position:fixed;
-bottom:0;
-width:100%;
-background:#00ff88;
-padding:15px;
-}
-
-.sticky a{
-color:black;
-font-weight:bold;
-text-decoration:none;
-}
-
 </style>
-
 </head>
 
 <body>
 
-<div class="container">
+<div class="card">
 
-<h1>BDG WIN</h1>
-<p class="sub">Play Smart. Win Real Rewards.</p>
+<div class="title">BDG WIN </div>
 
-<a class="btn" href="#">Download & Start Winning</a>
+<img class="logo" src="https://uploads.onecompiler.io/43by6n3b4/44fugtj96/WhatsApp%20Image%202026-03-09%20at%2010.25.07%20PM.jpeg">
 
-<a class="btn telegram" href="https://t.me/+VTJGdiRsF8djYzY1">Join Telegram</a>
+<div class="subtitle">DAILY FREE GIFTCODE</div>
 
-<div class="section">
+<div id="timer" class="timer">00:30</div>
 
-<h2>Limited Bonus Offer</h2>
+<div class="live">🔴 LIVE • <span id="users">207</span> USERS IN VC</div>
 
-<div class="timer" id="countdown">
-10:00
-</div>
+<a href="https://t.me/+VTJGdiRsF8djYzY1" class="btn join"
+onclick="fbq('track','Lead')">🚀 JOIN NOW</a>
 
-</div>
+<a href="https://t.me/+VTJGdiRsF8djYzY1" class="btn vip"
+onclick="fbq('track','Lead')">💎 VIP CHANNEL ACCESS</a>
 
-<div class="section">
+<div class="footer">Official Channel • Secure Access</div>
 
-<h2>Platform Features</h2>
-
-<div class="features">
-
-<div class="feature">
-⚡ Instant Withdrawals
-</div>
-
-<div class="feature">
-🎮 Easy to Play
-</div>
-
-<div class="feature">
-🎁 Daily Bonuses
-</div>
-
-<div class="feature">
-🔒 Secure Platform
-</div>
-
-</div>
-
-</div>
-
-<div class="section">
-
-<h2>How To Play</h2>
-
-<p>1️⃣ Register your BDG WIN account</p>
-<p>2️⃣ Choose colour prediction</p>
-<p>3️⃣ Place your prediction</p>
-<p>4️⃣ Win rewards instantly</p>
-
-</div>
-
-<div class="section">
-
-<h2>Player Reviews</h2>
-
-<div class="testimonial">
-Rahul: Withdraw within 10 minutes!
-</div>
-
-<div class="testimonial">
-Amit: Best colour prediction platform.
-</div>
-
-<div class="testimonial">
-Sneha: Very easy to play and win.
-</div>
-
-</div>
-
-<div class="section">
-
-<h2>Join Our Telegram</h2>
-
-<p>Get daily signals and bonus offers</p>
-
-<a class="btn telegram" href="https://t.me/+VTJGdiRsF8djYzY1">
-Join Telegram Channel
-</a>
-
-</div>
-
-<div class="footer">
-
-<p>BDG WIN Gaming Platform</p>
-
-<p>18+ Only | Entertainment Purpose Only</p>
-
-</div>
-
-</div>
-
-<div class="sticky">
-<a href="https://t.me/+VTJGdiRsF8djYzY1">JOIN TELEGRAM NOW</a>
 </div>
 
 <script>
 
-var time = 600;
+let time=30;
 
-var countdown = setInterval(function(){
-
-var minutes = Math.floor(time / 60);
-var seconds = time % 60;
-
-document.getElementById("countdown").innerHTML =
-minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
+setInterval(function(){
+let sec=time%60;
+document.getElementById("timer").innerHTML=
+"00:"+(sec<10?"0":"")+sec;
 
 time--;
-
-if(time < 0){
-clearInterval(countdown);
-document.getElementById("countdown").innerHTML="Offer Expired";
-}
-
+if(time<0){time=30;}
 },1000);
+
+setInterval(function(){
+let users=Math.floor(Math.random()*80)+180;
+document.getElementById("users").innerText=users;
+},3000);
 
 </script>
 
 </body>
 </html>
+```
