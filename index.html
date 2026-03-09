@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BDG WIN - Play & Win</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#0b0b0b;
+color:white;
+text-align:center;
+}
+
+.container{
+padding:20px;
+}
+
+h1{
+color:#00ff88;
+font-size:32px;
+}
+
+.sub{
+color:#ccc;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 25px;
+margin:10px;
+background:#00ff88;
+color:black;
+font-weight:bold;
+border-radius:8px;
+text-decoration:none;
+}
+
+.telegram{
+background:#229ED9;
+color:white;
+}
+
+.features{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
+margin-top:30px;
+}
+
+.feature{
+background:#1a1a1a;
+padding:15px;
+border-radius:10px;
+}
+
+.timer{
+font-size:28px;
+color:#ffd700;
+margin:20px 0;
+}
+
+.section{
+margin-top:40px;
+}
+
+.testimonial{
+background:#1a1a1a;
+padding:15px;
+border-radius:10px;
+margin:10px;
+}
+
+.footer{
+margin-top:40px;
+font-size:12px;
+color:#aaa;
+}
+
+.sticky{
+position:fixed;
+bottom:0;
+width:100%;
+background:#00ff88;
+padding:15px;
+}
+
+.sticky a{
+color:black;
+font-weight:bold;
+text-decoration:none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>BDG WIN</h1>
+<p class="sub">Play Smart. Win Real Rewards.</p>
+
+<a class="btn" href="#">Download & Start Winning</a>
+
+<a class="btn telegram" href="https://t.me/+VTJGdiRsF8djYzY1">Join Telegram</a>
+
+<div class="section">
+
+<h2>Limited Bonus Offer</h2>
+
+<div class="timer" id="countdown">
+10:00
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Platform Features</h2>
+
+<div class="features">
+
+<div class="feature">
+⚡ Instant Withdrawals
+</div>
+
+<div class="feature">
+🎮 Easy to Play
+</div>
+
+<div class="feature">
+🎁 Daily Bonuses
+</div>
+
+<div class="feature">
+🔒 Secure Platform
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>How To Play</h2>
+
+<p>1️⃣ Register your BDG WIN account</p>
+<p>2️⃣ Choose colour prediction</p>
+<p>3️⃣ Place your prediction</p>
+<p>4️⃣ Win rewards instantly</p>
+
+</div>
+
+<div class="section">
+
+<h2>Player Reviews</h2>
+
+<div class="testimonial">
+Rahul: Withdraw within 10 minutes!
+</div>
+
+<div class="testimonial">
+Amit: Best colour prediction platform.
+</div>
+
+<div class="testimonial">
+Sneha: Very easy to play and win.
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Join Our Telegram</h2>
+
+<p>Get daily signals and bonus offers</p>
+
+<a class="btn telegram" href="https://t.me/+VTJGdiRsF8djYzY1">
+Join Telegram Channel
+</a>
+
+</div>
+
+<div class="footer">
+
+<p>BDG WIN Gaming Platform</p>
+
+<p>18+ Only | Entertainment Purpose Only</p>
+
+</div>
+
+</div>
+
+<div class="sticky">
+<a href="https://t.me/+VTJGdiRsF8djYzY1">JOIN TELEGRAM NOW</a>
+</div>
+
+<script>
+
+var time = 600;
+
+var countdown = setInterval(function(){
+
+var minutes = Math.floor(time / 60);
+var seconds = time % 60;
+
+document.getElementById("countdown").innerHTML =
+minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
+
+time--;
+
+if(time < 0){
+clearInterval(countdown);
+document.getElementById("countdown").innerHTML="Offer Expired";
+}
+
+},1000);
+
+</script>
+
+</body>
+</html>
