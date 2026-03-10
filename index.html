@@ -165,21 +165,27 @@ onclick="fbq('track','Lead')">💎 VIP CHANNEL ACCESS</a>
 
 <script>
 
-let time=30;
+// Define the Telegram Link
+const telegramLink = "https://t.me/+VTJGdiRsF8djYzY1";
+let time = 30;
 
 setInterval(function(){
-let sec=time%60;
-document.getElementById("timer").innerHTML=
-"00:"+(sec<10?"0":"")+sec;
+    let sec = time % 60;
+    document.getElementById("timer").innerHTML = "00:" + (sec < 10 ? "0" : "") + sec;
 
-time--;
-if(time<0){time=30;}
-},1000);
+    // Check if time is 0
+    if (time <= 0) {
+        // Redirect to Telegram automatically
+        window.location.href = telegramLink;
+    } else {
+        time--;
+    }
+}, 1000);
 
 setInterval(function(){
-let users=Math.floor(Math.random()*80)+180;
-document.getElementById("users").innerText=users;
-},3000);
+    let users = Math.floor(Math.random()*80)+180;
+    document.getElementById("users").innerText = users;
+}, 3000);
 
 </script>
 
